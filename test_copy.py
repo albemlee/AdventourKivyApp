@@ -8,26 +8,16 @@ from kivy.uix.floatlayout import FloatLayout
 from kivy.uix.scatter import Scatter
 from kivy.uix.image import Image, AsyncImage
 from kivy.uix.anchorlayout import AnchorLayout
+from kivy.uix.screenmanager import ScreenManager, Screen
 
 
-# beach_image = AsyncImage(source='https://upload.wikimedia.org/wikipedia/commons/thumb/0/05/20100726_Kalamitsi_Beach_Ionian_Sea_Lefkada_island_Greece.jpg/1920px-20100726_Kalamitsi_Beach_Ionian_Sea_Lefkada_island_Greece.jpg')
-# city_image = AsyncImage(source='https://upload.wikimedia.org/wikipedia/commons/thumb/5/57/Sheth_Motisha_Tonk_01.jpg/600px-Sheth_Motisha_Tonk_01.jpg')
-# paragliding_image = AsyncImage(source='https://upload.wikimedia.org/wikipedia/commons/thumb/5/51/Paragliding_Sopelana_Biscay.jpg/440px-Paragliding_Sopelana_Biscay.jpg')
-# forest_image = AsyncImage(source='https://upload.wikimedia.org/wikipedia/commons/thumb/b/bc/Biogradska_suma.jpg/440px-Biogradska_suma.jpg')
-# bar_image = AsyncImage(source='https://upload.wikimedia.org/wikipedia/commons/thumb/4/43/Bar-P1030319.jpg/1920px-Bar-P1030319.jpg')
-# peacock_image = AsyncImage(source='https://upload.wikimedia.org/wikipedia/commons/thumb/c/c5/Peacock_Plumage.jpg/520px-Peacock_Plumage.jpg')
+beach_image = AsyncImage(source='https://upload.wikimedia.org/wikipedia/commons/thumb/0/05/20100726_Kalamitsi_Beach_Ionian_Sea_Lefkada_island_Greece.jpg/1920px-20100726_Kalamitsi_Beach_Ionian_Sea_Lefkada_island_Greece.jpg')
+city_image = AsyncImage(source='https://upload.wikimedia.org/wikipedia/commons/thumb/5/57/Sheth_Motisha_Tonk_01.jpg/600px-Sheth_Motisha_Tonk_01.jpg')
+paragliding_image = AsyncImage(source='https://upload.wikimedia.org/wikipedia/commons/thumb/5/51/Paragliding_Sopelana_Biscay.jpg/440px-Paragliding_Sopelana_Biscay.jpg')
+forest_image = AsyncImage(source='https://upload.wikimedia.org/wikipedia/commons/thumb/b/bc/Biogradska_suma.jpg/440px-Biogradska_suma.jpg')
+bar_image = AsyncImage(source='https://upload.wikimedia.org/wikipedia/commons/thumb/4/43/Bar-P1030319.jpg/1920px-Bar-P1030319.jpg')
+peacock_image = AsyncImage(source='https://upload.wikimedia.org/wikipedia/commons/thumb/c/c5/Peacock_Plumage.jpg/520px-Peacock_Plumage.jpg')
 
-
-
-
-
-
-class MyJB(App):
-    def build(self):
-
-        parent = Container()
-        
-        return parent
 
 class Adventour(App):
     def build(self):

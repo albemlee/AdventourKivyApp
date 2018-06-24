@@ -1,0 +1,490 @@
+ScreenManager:
+    MenuScreen:
+    FirstScreen:
+    SecondScreen:
+    ThirdScreen:
+    FourthScreen:
+    FifthScreen:
+    SixthScreen:
+    SeventhScreen:
+    EigthScreen:
+
+<MenuScreen>:
+    name: 'MenuScreen'
+    Image:
+        source:'adventour_logo_3.png'
+        pos: (90, 1200)
+        size_hint_y: None
+        size_hint_x: None
+        height: 360
+        width: 360
+    TextInput:
+        text:'username'
+        font_size: 30
+        valign: 'center'
+        pos: (80, 1100)
+        size_hint_y: None
+        size_hint_x: None
+        height: 50
+        width: 660
+    TextInput:
+        text:'password'
+        font_size: 30
+        valign: 'center'
+        pos: (80, 1000)
+        size_hint_y: None
+        size_hint_x: None
+        height: 50
+        width: 660
+    TextInput:
+        text:'Date of Birth: MM/DD/YYYY'
+        font_size: 30
+        valign: 'center'
+        pos: (80, 700)
+        size_hint_y: None
+        size_hint_x: None
+        height: 50
+        width: 660
+    Button:
+        on_release:
+            app.root.current = 'FirstScreen'
+        text: "Submit"
+        pos: (207, 300)
+        size: (360, 240)
+        size_hint_y: None
+        size_hint_x: None
+        font_size: 50
+
+<FirstScreen>:
+    name: 'FirstScreen'
+    Label:
+        id: pick_one
+        text: 'Pick One'
+        halign: 'center'
+        pos: (190, 1100)
+        size_hint_y: None
+        size_hint_x: None
+        height: 480
+        width: 480
+        font_size: 150
+    Button:
+        id: beach_image
+        on_release: app.root.current = 'SecondScreen'
+        pos: (40, 900)
+        size_hint_y: None
+        size_hint_x: None
+        height: 360
+        width: 360
+        background_color: 0, 0, 0, 0
+        AsyncImage:
+            source: 'https://upload.wikimedia.org/wikipedia/commons/thumb/0/05/20100726_Kalamitsi_Beach_Ionian_Sea_Lefkada_island_Greece.jpg/1920px-20100726_Kalamitsi_Beach_Ionian_Sea_Lefkada_island_Greece.jpg'
+            pos: (40, 900)
+            size_hint_y: None
+            size_hint_x: None
+            height: 360
+            width: 360
+    Button:
+        id: temple_image
+        on_release: app.root.current = 'SecondScreen'
+        pos: (430, 900)
+        size_hint_y: None
+        size_hint_x: None
+        height: 360
+        width: 360
+        background_color: 0, 0, 0, 0
+        AsyncImage:
+            source: 'https://upload.wikimedia.org/wikipedia/commons/thumb/5/57/Sheth_Motisha_Tonk_01.jpg/600px-Sheth_Motisha_Tonk_01.jpg'
+            pos: (430, 900)
+            size_hint_y: None
+            size_hint_x: None
+            height: 360
+            width: 360
+    Button:
+        id: paragliding_image
+        on_release: app.root.current = 'SecondScreen'
+        pos: (40, 600)
+        size_hint_y: None
+        size_hint_x: None
+        height: 360
+        width: 360
+        background_color: 0, 0, 0, 0
+        AsyncImage:
+            source: 'https://upload.wikimedia.org/wikipedia/commons/thumb/5/51/Paragliding_Sopelana_Biscay.jpg/440px-Paragliding_Sopelana_Biscay.jpg'
+            pos: (40, 600)
+            size_hint_y: None
+            size_hint_x: None
+            height: 360
+            width: 360
+    Button:
+        id: forest_image
+        on_release: app.root.current = 'SecondScreen'
+        pos: (430, 600)
+        size_hint_y: None
+        size_hint_x: None
+        height: 360
+        width: 360
+        background_color: 0, 0, 0, 0
+        AsyncImage:
+            source: 'https://upload.wikimedia.org/wikipedia/commons/thumb/b/bc/Biogradska_suma.jpg/440px-Biogradska_suma.jpg'
+            pos: (430, 600)
+            size_hint_y: None
+            size_hint_x: None
+            height: 360
+            width: 360
+    Button:
+        id: bar_image
+        on_release: app.root.current = 'SecondScreen'
+        pos: (40, 300)
+        size_hint_y: None
+        size_hint_x: None
+        height: 360
+        width: 360
+        background_color: 0, 0, 0, 0
+        AsyncImage:
+            source: 'https://upload.wikimedia.org/wikipedia/commons/thumb/4/43/Bar-P1030319.jpg/1920px-Bar-P1030319.jpg'
+            pos: (40, 300)
+            size_hint_y: None
+            size_hint_x: None
+            height: 360
+            width: 360
+    Button:
+        id: peacock_image
+        on_release: app.root.current = 'SecondScreen'
+        pos: (430, 300)
+        size_hint_y: None
+        size_hint_x: None
+        height: 360
+        width: 360
+        background_color: 0, 0, 0, 0
+        AsyncImage:
+            source: 'https://upload.wikimedia.org/wikipedia/commons/thumb/c/c5/Peacock_Plumage.jpg/520px-Peacock_Plumage.jpg'
+            pos: (430, 300)
+            size_hint_y: None
+            size_hint_x: None
+            height: 360
+            width: 360
+<SecondScreen>:
+    name: 'SecondScreen'
+    Label:
+        id: ditch_one
+        text: 'Ditch One'
+        halign: 'center'
+        pos: (190, 1100)
+        size_hint_y: None
+        size_hint_x: None
+        height: 480
+        width: 480
+        font_size: 150
+    Button:
+        id: beach_image
+        on_release: app.root.current = 'ThirdScreen'
+        pos: (40, 900)
+        size_hint_y: None
+        size_hint_x: None
+        height: 360
+        width: 360
+        background_color: 0, 0, 0, 0
+        AsyncImage:
+            source: 'https://upload.wikimedia.org/wikipedia/commons/thumb/0/05/20100726_Kalamitsi_Beach_Ionian_Sea_Lefkada_island_Greece.jpg/1920px-20100726_Kalamitsi_Beach_Ionian_Sea_Lefkada_island_Greece.jpg'
+            pos: (40, 900)
+            size_hint_y: None
+            size_hint_x: None
+            height: 360
+            width: 360
+    Button:
+        id: temple_image
+        on_release: app.root.current = 'ThirdScreen'
+        pos: (430, 900)
+        size_hint_y: None
+        size_hint_x: None
+        height: 360
+        width: 360
+        background_color: 0, 0, 0, 0
+        AsyncImage:
+            source: 'https://upload.wikimedia.org/wikipedia/commons/thumb/5/57/Sheth_Motisha_Tonk_01.jpg/600px-Sheth_Motisha_Tonk_01.jpg'
+            pos: (430, 900)
+            size_hint_y: None
+            size_hint_x: None
+            height: 360
+            width: 360
+    Button:
+        id: paragliding_image
+        on_release: app.root.current = 'ThirdScreen'
+        pos: (40, 600)
+        size_hint_y: None
+        size_hint_x: None
+        height: 360
+        width: 360
+        background_color: 0, 0, 0, 0
+        AsyncImage:
+            source: 'https://upload.wikimedia.org/wikipedia/commons/thumb/5/51/Paragliding_Sopelana_Biscay.jpg/440px-Paragliding_Sopelana_Biscay.jpg'
+            pos: (40, 600)
+            size_hint_y: None
+            size_hint_x: None
+            height: 360
+            width: 360
+    Button:
+        id: forest_image
+        on_release: app.root.current = 'ThirdScreen'
+        pos: (430, 600)
+        size_hint_y: None
+        size_hint_x: None
+        height: 360
+        width: 360
+        background_color: 0, 0, 0, 0
+        AsyncImage:
+            source: 'https://upload.wikimedia.org/wikipedia/commons/thumb/b/bc/Biogradska_suma.jpg/440px-Biogradska_suma.jpg'
+            pos: (430, 600)
+            size_hint_y: None
+            size_hint_x: None
+            height: 360
+            width: 360
+    Button:
+        id: bar_image
+        on_release: app.root.current = 'ThirdScreen'
+        pos: (40, 300)
+        size_hint_y: None
+        size_hint_x: None
+        height: 360
+        width: 360
+        background_color: 0, 0, 0, 0
+        AsyncImage:
+            source: 'https://upload.wikimedia.org/wikipedia/commons/thumb/4/43/Bar-P1030319.jpg/1920px-Bar-P1030319.jpg'
+            pos: (40, 300)
+            size_hint_y: None
+            size_hint_x: None
+            height: 360
+            width: 360
+    Button:
+        id: peacock_image
+        on_release: app.root.current = 'ThirdScreen'
+        pos: (430, 300)
+        size_hint_y: None
+        size_hint_x: None
+        height: 360
+        width: 360
+        background_color: 0, 0, 0, 0
+        AsyncImage:
+            source: 'https://upload.wikimedia.org/wikipedia/commons/thumb/c/c5/Peacock_Plumage.jpg/520px-Peacock_Plumage.jpg'
+            pos: (430, 300)
+            size_hint_y: None
+            size_hint_x: None
+            height: 360
+            width: 360
+<ThirdScreen>:
+    name: 'ThirdScreen'
+    AsyncImage:
+        names: 'bad_image'
+        source: root.img_src
+        pos: (75, 700)
+        size_hint_y: None
+        size_hint_x: None
+        height: 720
+        width: 680
+    Button:
+        on_release:
+            app.dont_proceed_recommendations
+            app.root.current = 'FourthScreen'
+            app.update_random_image
+        text: "No"
+        pos: (40, 300)
+        size: (360, 240)
+        size_hint_y: None
+        size_hint_x: None
+        font_size: 50
+        background_color: 1, 0, 0, 1
+    Button:
+        on_release:
+            root.canvas.ask_update()
+            app.proceed_recommendations
+            app.root.current = 'FourthScreen'
+            app.update_random_image
+        text: "Yes"
+        pos: (430, 300)
+        size: (360, 240)
+        size_hint_y: None
+        size_hint_x: None
+        font_size: 50
+        background_color: 0, 1, 0, 1
+<FourthScreen>:
+    name: 'FourthScreen'
+    AsyncImage:
+        names: 'bad_image'
+        source: root.img_src
+        pos: (75, 700)
+        size_hint_y: None
+        size_hint_x: None
+        height: 720
+        width: 680
+    Button:
+        on_release:
+            app.dont_proceed_recommendations
+            app.root.current = 'FifthScreen'
+            app.update_random_image
+        text: "No"
+        pos: (40, 300)
+        size: (360, 240)
+        size_hint_y: None
+        size_hint_x: None
+        font_size: 50
+        background_color: 1, 0, 0, 1
+    Button:
+        on_release:
+            root.canvas.ask_update()
+            app.proceed_recommendations
+            app.root.current = 'FifthScreen'
+            app.update_random_image
+        text: "Yes"
+        pos: (430, 300)
+        size: (360, 240)
+        size_hint_y: None
+        size_hint_x: None
+        font_size: 50
+        background_color: 0, 1, 0, 1
+<FifthScreen>:
+    name: 'FifthScreen'
+    AsyncImage:
+        names: 'bad_image'
+        source: root.img_src
+        pos: (75, 700)
+        size_hint_y: None
+        size_hint_x: None
+        height: 720
+        width: 680
+    Button:
+        on_release:
+            app.dont_proceed_recommendations
+            app.root.current = 'SixthScreen'
+            app.update_random_image
+        text: "No"
+        pos: (40, 300)
+        size: (360, 240)
+        size_hint_y: None
+        size_hint_x: None
+        font_size: 50
+        background_color: 1, 0, 0, 1
+    Button:
+        on_release:
+            root.canvas.ask_update()
+            app.proceed_recommendations
+            app.root.current = 'SixthScreen'
+            app.update_random_image
+        text: "Yes"
+        pos: (430, 300)
+        size: (360, 240)
+        size_hint_y: None
+        size_hint_x: None
+        font_size: 50
+        background_color: 0, 1, 0, 1
+<SixthScreen>:
+    name: 'SixthScreen'
+    AsyncImage:
+        names: 'bad_image'
+        source: root.img_src
+        pos: (75, 700)
+        size_hint_y: None
+        size_hint_x: None
+        height: 720
+        width: 680
+    Button:
+        on_release:
+            app.dont_proceed_recommendations
+            app.root.current = 'SeventhScreen'
+            app.update_random_image
+        text: "No"
+        pos: (40, 300)
+        size: (360, 240)
+        size_hint_y: None
+        size_hint_x: None
+        font_size: 50
+        background_color: 1, 0, 0, 1
+    Button:
+        on_release:
+            root.canvas.ask_update()
+            app.proceed_recommendations
+            app.root.current = 'SeventhScreen'
+            app.update_random_image
+        text: "Yes"
+        pos: (430, 300)
+        size: (360, 240)
+        size_hint_y: None
+        size_hint_x: None
+        font_size: 50
+        background_color: 0, 1, 0, 1
+<SeventhScreen>:
+    name: 'SeventhScreen'
+    AsyncImage:
+        names: 'bad_image'
+        source: root.img_src
+        pos: (75, 700)
+        size_hint_y: None
+        size_hint_x: None
+        height: 720
+        width: 680
+    Button:
+        on_release:
+            app.dont_proceed_recommendations
+            app.root.current = 'EigthScreen'
+            app.update_random_image
+        text: "No"
+        pos: (40, 300)
+        size: (360, 240)
+        size_hint_y: None
+        size_hint_x: None
+        font_size: 50
+        background_color: 1, 0, 0, 1
+    Button:
+        on_release:
+            root.canvas.ask_update()
+            app.proceed_recommendations
+            app.root.current = 'EigthScreen'
+            app.update_random_image
+        text: "Yes"
+        pos: (430, 300)
+        size: (360, 240)
+        size_hint_y: None
+        size_hint_x: None
+        font_size: 50
+        background_color: 0, 1, 0, 1
+<EigthScreen>:
+    name: "EigthScreen"
+    Label:
+        id: rec_1
+        text: root.label_src_1
+        halign: 'center'
+        pos: (190, 900)
+        size_hint_y: None
+        size_hint_x: None
+        height: 480
+        width: 480
+        font_size: 30
+    Label:
+        id: rec_2
+        text: root.label_src_2
+        halign: 'center'
+        pos: (190, 500)
+        size_hint_y: None
+        size_hint_x: None
+        height: 480
+        width: 480
+        font_size: 30
+    Label:
+        id: rec_3
+        text: root.label_src_3
+        halign: 'center'
+        pos: (190, 100)
+        size_hint_y: None
+        size_hint_x: None
+        height: 480
+        width: 480
+        font_size: 30
+    Label:
+        id: final_title
+        text: "Cool Places for You"
+        halign: 'center'
+        pos: (190, 1100)
+        size_hint_y: None
+        size_hint_x: None
+        height: 480
+        width: 480
+        font_size: 75
